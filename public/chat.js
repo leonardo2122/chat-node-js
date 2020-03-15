@@ -14,7 +14,7 @@ var feedback = document.querySelector('#feedback');
 // Emit events
 sendButton.addEventListener('click', function() {
   socket.emit('chat', {
-    message:  message.value,     // .value b/c it's an <input> field
+    message:  message.value,
     handle: handle.value
   })
 
